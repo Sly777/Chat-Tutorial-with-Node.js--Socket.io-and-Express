@@ -1,0 +1,10 @@
+{
+    "name": "Chat Tutorial with Node.js, Socket.io and Express"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.5"
+    , "jade": ">= 0.0.1"
+    , "socket.io": "0.8.7"
+  }
+}

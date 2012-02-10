@@ -1,0 +1,22 @@
+!!! 5
+html(lang="en")
+    head
+        title Chat Page with Node.js, Express and Socket.io
+        link(href='http://fonts.googleapis.com/css?family=Asap', rel='stylesheet', type='text/css')
+        script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+        script(type='text/javascript', src='/socket.io/socket.io.js')
+        script(type='text/javascript', src='/javascripts/main.js')
+    body
+        div(id='isimGirisEkrani', style='padding: 10px; border: #98A942 1px solid; width: 540px; margin-bottom: 10px; font-family: "Asap", Trebuchet MS, sans-serif; font-size: 14px;')
+            span İsminizi giriniz :
+            input(type='text', id='txtIsim', placeholder='İsminizi buraya girin...')
+            input(type='button', id='btnBaglan', value='Bağlan')
+
+        div(id='chatBolumu', style='display:none;')
+            div(style='float:left;width:100px;height: 330px;padding:10px;background-color: #98A942;box-shadow: 1px 1px 0px rgba(0,0,0,0.5);color: white;margin: 0;padding: 10px;font-family: "Asap", Trebuchet MS, sans-serif;')
+                b(style='display: block; background-color: #63740D; text-align: center; box-shadow: 1px 1px 0px rgba(255,255,255,0.5); margin-bottom: 10px;') Kullanıcılar
+                div(id='kullanicilar', style='overflow: auto; height: 295px;')
+            div(style='float:left;width: 400px;padding:10px;margin-left: 20px;border: 1px solid #98A942;')
+                div(id='konusmaPenceresi', style='background-color: #FFFFC0; padding: 10px; border: 1px solid #E7E7A8;')
+                input(id='mesaj', style='width:280px;')
+                input(type='button', id='mesajiYolla', value='Mesaj Gonder')
